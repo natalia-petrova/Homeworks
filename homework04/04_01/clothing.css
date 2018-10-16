@@ -1,0 +1,64 @@
+table {
+    width: 100%;
+}
+.top {
+    background-color: rgb(6, 81, 164);
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14;
+    font-weight: 600;
+    line-height: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    word-spacing: 10px;
+}
+.main01 {
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 0px;
+}
+.imglogo {
+    width: 100px;
+}
+.moto {
+    text-transform: uppercase;
+    color: rgb(6, 81, 164);
+    font-weight: 600;
+    line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.app {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+.imgmain {
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 400px;
+}
+.bottom {
+    text-align: center;
+    background-color: rgb(6, 81, 164);
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.bottom01 {
+    line-height: 3;
+    margin-top: 50px; 
+}
+.bottomimg {
+    width: 100px;
+    background-color: whitesmoke;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+.bottommoto {
+    padding-bottom: 50px;
+}

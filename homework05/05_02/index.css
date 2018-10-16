@@ -1,0 +1,111 @@
+body {
+    width: 100%;
+    margin: 0px auto;
+}
+header {
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,.7);
+    padding-top: 70px;
+    padding-bottom: 90px;
+    text-align: center;
+    font-family: Arial;
+    color: white;
+    font-size: 12px;
+}
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding-top: 30px;
+}
+hr {
+    max-width: 45px;
+    margin-bottom: 30px;
+    color: white;
+} 
+.images {
+    letter-spacing: 50px;
+    padding-top: 80px;
+}
+.top {
+    text-align: center;
+    font-family: Arial;
+}
+h2 {
+    font-family: Arial;
+}
+.leftcolumn {
+    text-align: left;
+    margin-left: 150px;
+    font-family: Arial;
+    float: left;
+    padding-bottom: 50px;   
+}
+.container {
+    font-size: 14px;
+    padding: 5px;
+    color: darkgrey;
+    line-height: 1;
+    border-bottom: 2px solid lightgray;
+}
+input {
+    border: none;
+    width: 700px;
+}
+.button {
+    background-color: rgb(234, 104, 82);
+    width: 200px;
+    color: white; 
+    font-size: 16px;
+    line-height: 2;
+    border: 0px;
+}
+textarea {
+    resize: none;
+    height: 50px;
+    width: 700px;
+    border: none;
+}
+.logos {
+    float: right;
+    margin-top: 40px;
+    margin-right: 250px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+    line-height: 2.5;
+}
+.behance {
+    background-color: rgba(14,157,249,.85);
+    background-blend-mode: lighten;
+    border: 1px solid white;
+}
+.twitter {
+    background-color:rgb(81, 215, 253);
+    border: 1px solid white;
+}
+.dribble {
+    background-color: rgb(250, 77, 155);
+    border: 1px solid white;
+}
+.facebook {
+    background-color: rgb(42, 98, 172);
+    border: 1px solid white;
+}
+.google {
+    background-color: rgb(241, 48, 49);
+    border: 1px solid white;
+}
+footer {
+    clear: both;
+    text-align: center;
+    padding-top: 5px;
+    font-family: Arial;
+    background-color: lightgrey;
+    height: 50px;
+    color: gray
+}

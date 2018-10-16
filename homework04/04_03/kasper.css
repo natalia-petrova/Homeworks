@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(18, 17, 22);
+    color: lightgray;
+    text-align: center;
+    width: 100%;
+}
+.logo {
+    margin-top: 100px;
+}
+.moto {
+    text-transform: uppercase;
+    font-family: Arial;
+}
+hr {
+    max-width: 180px;
+}
+.small {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bottom {
+    font-family: Calibri;
+    font-size: 16px;
+    margin-top: 50px;
+}
+.colortext {
+    color: rgb(0, 200, 252);
+}

@@ -1,0 +1,141 @@
+body {
+    width: 100%;
+    margin: 0px auto;
+}
+.col {
+    padding: 0 15px;
+    float: left;
+    box-sizing: border-box;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33333%;
+}
+.col-12 {
+    width: 100%;
+}
+.row {
+    margin: 0 -15px;
+    padding-bottom: 15px;
+}
+.clear {
+    clear: both;
+    height: 1px;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.firstpart {
+    background-color: rgb(246, 246, 246);
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: Arial;
+}
+h4 {
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-bottom: 0px;
+    word-spacing: 5px;
+}
+hr {
+    max-width: 45px;
+    margin-bottom: 30px;
+} 
+.title1 {
+    font-weight: bold;
+    padding-top: 10px;
+    margin: 0;
+    text-align: left;
+    font-size: 14px;
+}
+.title2 {
+    margin: 0;
+    font-size: 12px;
+    color: gray;
+    text-align: left;
+}
+.frontimg {
+    background: url(./img01/img.png);
+    display: inline-block;
+    width: 265px;
+    height: 265px;
+}
+.about {
+    display:inline-block;
+    padding: 10px;
+    margin-top: 100px;
+}
+.backimg {
+    display: none;
+    width: 265px;
+    height: 265px;
+}
+.frontimg .backimg {
+    width: 265px;
+    height: 265px;
+}
+.missing:hover .frontimg {
+    display: none;
+}
+.missing:hover .backimg {
+    display:inline-block;
+    background-color: lightskyblue;
+}
+.secondpart {
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 30px;
+    text-align: center;
+    font-family: Arial;
+    text-decoration: none;
+}
+.title3 {
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(116, 116, 116);
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.title3:hover {
+    color: aqua;
+    text-decoration: none;
+    text-align: center;
+}
+.title4 {
+    line-height: 2;
+    margin-top: 20px;
+}
+.title3img0 {
+    background: url(./img01/icon0.png);
+    display: inline-block;
+    width: 61px;
+    height: 64px;
+}
+.title3img0:hover {
+    background: url(./img01/icon0--hover.png);
+}
+.title3img1 {
+    background: url(./img01/icon1.png);
+    display: inline-block;
+    width: 66px;
+    height: 64px;
+}
+.title3img1:hover {
+    background: url(./img01/icon1--hover.png);
+}
+.title3img2 {
+    background: url(./img01/icon2.png);
+    display: inline-block;
+    width: 55px;
+    height: 64px;
+}
+.title3img2:hover {
+    background: url(./img01/icon2--hover.png);
+}
+
