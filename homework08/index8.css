@@ -1,3 +1,14 @@
+body {
+    width: 1280px;
+    height: 976px;
+    font-family: 'PT Sans';
+    text-align: center;
+    background-image: url();
+}
+.container {
+    width: 954px;
+    margin: 0 auto;
+}
 .col {
     padding: 0 15px;
     float: left;
@@ -6,18 +17,12 @@
 .col-1 {
     width: 8.333333333333333%;
 }
-.col-2 {
-    width: 16.66666666666667%;
-}
 .col-3 {
     width: 25%;
+    padding-top: 65px;
 }
 .col-4 {
     width: 33.33333%;
-}
-.col-6 {
-    width: 50%;
-    line-height: 2;
 }
 .col-12 {
     width: 100%;
@@ -32,31 +37,28 @@
     clear: both;
     height: 1px;
 }
-.container {
-    width: 1170px;
-    margin: 0 auto;
-}
-body {
-    width: 1280px;
-    height: 976px;
-    font-family: 'Montserrat';
-    text-align: center;
-}
 .title {
     text-transform: uppercase;
     color: #898f99;
-    font-size: 12px;
-	font-weight: 700;
-	line-height: 30px;
+    font-size: 11px;
+	font-weight: 600;
+    line-height: 30px;
+    position: relative; top: 5px;
+    letter-spacing: 5px;
 }
 .subtitle {
     text-transform: uppercase;
-    margin: 0px 300px 0px 300px;
     color: #999;
-	font-family: 'PT Sans';
 	font-size: 18px;
 	font-weight: 400;
-	line-height: 30px;
+    line-height: 30px;
+    position: relative; top: 7px;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+}
+.top {
+    padding-top: 108px;
+    padding-bottom: 70px;
 }
 h1 {
     color: #0ec8cb;
@@ -64,18 +66,43 @@ h1 {
 	font-size: 48px;
 	font-weight: 400;
 	line-height: 30px;
-	text-transform: uppercase;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    word-spacing: 2px;
 }
 h3 {
     font-family: 'Montserrat';
 	font-size: 21px;
-	font-weight: 400;
-	text-transform: uppercase;
+	font-weight: 600;
+    text-transform: uppercase;
+    position: relative; top: 30px;
 }
 .text {
     color: #777;
 	font-size: 14px;
 	font-weight: 400;
     line-height: 22px;
-    font-family: 'PT Sans';
+    position: relative; top: 32px;
+}
+.web {
+    height: 420px;
+}
+.graphics, {
+    position: relative; right: 10px;
+}
+.illustrations {
+    position: relative; right: 15px;
+}
+i {
+    font-size: 55px;
+}
+.table {
+    background-color: #f7f7f7;
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    padding-bottom: 107px;
+}
+.table:hover {
+    background-color: #0ec8cb;
+    color: white;
 }
