@@ -1,0 +1,171 @@
+body {
+    background-image: url();
+    background-position: top;
+    font-family: 'Karla', sans-serif;
+}
+.header {
+    background-image: url(../img/things-arranged-3_back.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,.7);
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.header__headline {
+    padding: 40px 90px 0px 85px;
+    height: 638px;
+    font-family: 'Karla';
+}
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo--menu {
+    padding-right: 15px;
+}
+.header__text {
+    padding-top: 105px;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    line-height: 45px;
+    color: white;
+}
+.header__title--bold {
+    font-weight: 700;
+    word-spacing: 0.5px;
+}
+.header__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 66px;
+    text-decoration: none;
+    color: white;
+    position: relative; right: 3px; bottom: 4px;
+}
+.cards {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-collapse: collapse;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 24px;
+	font-weight: 400;
+    color: white;
+    display: block;
+    width: 220px;
+    height: 220px;
+    transition: 1.5s; 
+}
+.cards__back {
+    display: none;
+}
+.cards:hover, .cards:active {
+    background-color: #2ecc71;
+    color: white;
+    opacity: 0.92;
+    padding-top: 30px;
+    transition: 1.5s;
+}
+.cards:hover .cards__front {
+    display: none;
+}
+.cards:hover .cards__back {
+    display: block;
+}
+.icons {
+    box-sizing: border-box;
+    border: 1px solid white;
+	border-radius: 3px;
+    color: white;
+    padding: 12px;
+    height: 52px;
+}
+.cards:hover a {
+    background-color: #2ecc71; 
+    text-decoration: none; 
+    display: block;
+    text-align: center;
+}
+.active__space {
+    text-decoration: none;
+    color: white;
+}
+.more {
+    display: block;
+    border-collapse: collapse;
+    width: 218px;
+    font-size: 18px;
+    font-weight: 400;
+	line-height: 55px;
+    background-color: #27ae60;   
+}
+.about__section {
+    height: 585px;
+    background-image: url(../img/main_about_back.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.about__text {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 95px 0px 0px 83px;
+}
+.about__bio--hi {
+    font-size: 30px;
+	line-height: 29px; 
+    font-weight: 400;
+    color: #191919;
+    font-family: 'Asap';
+    margin: 0cm;
+}
+.about__bio--lorem {
+    color: #404040;
+	font-family: 'Karla';
+	font-size: 16px;
+	font-weight: 400;
+    line-height: 29px;
+    padding-top: 5px;
+}
+.about__buttons {
+    padding-top: 31px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.btn {
+    display: inline-block;
+    border: 1px solid #2ec06c;
+	border-radius: 5px;
+    background-color: transparent;
+    width: 200px;
+    height: 60px;
+    position: relative; right: 17px; top: 5px;
+    color: #2ec06c;
+	font-family: 'Asap';
+	font-size: 18px;
+	font-weight: 400;
+    line-height: 29px;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.btn:hover, .btn:active {
+    color: white;
+	font-family: 'Asap';
+	font-size: 18px;
+	font-weight: 400;
+    line-height: 29px;
+    background-color: #2ec06c;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    transition: 1.5s;
+}
+.about__image {
+    position: relative; left: 19px;
+}
