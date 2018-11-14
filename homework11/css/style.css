@@ -23,9 +23,66 @@ body {
 .header__logo {
     display: flex;
     justify-content: space-between;
+    align-content: stretch;
+}
+#main {
+    transition: margin-right .5s;
 }
 .header__logo--menu {
     padding-right: 15px;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #171717;;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+}
+.sidebar a {
+    padding: 0px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #c4c4c4;
+    font-weight: 400;
+    font-family: 'Asap';
+	font-size: 18px;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    color: white;
+	font-weight: 700;
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+    width: 16px;
+	height: 18px;
+	color: white;
+	font-family: 'Asap';
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 0px 10px;
+    border: none;
+}
+.openbtn:hover {
+    background-color: #444;
 }
 .header__text {
     padding-top: 105px;
@@ -60,7 +117,7 @@ body {
     display: block;
     width: 220px;
     height: 220px;
-    transition: 2s;
+    transition: 1s;
 }
 .cards__back {
     display: none;
@@ -70,7 +127,7 @@ body {
     color: white;
     opacity: 0.92;
     padding-top: 30px;
-    transition: 1.5s;
+    transition: 0.6s ease;
 }
 .cards:hover .cards__front {
     display: none;
@@ -87,7 +144,6 @@ body {
     height: 52px;
 }
 .cards:hover a {
-    background-color: #2ecc71; 
     text-decoration: none; 
     display: block;
     text-align: center;
@@ -96,7 +152,7 @@ body {
     text-decoration: none;
     color: white;
 }
-.more {
+.cards__more {
     display: block;
     border-collapse: collapse;
     width: 218px;
@@ -153,7 +209,7 @@ body {
 	font-weight: 400;
     line-height: 29px;
     cursor: pointer;
-    transition: 1.5s;
+    transition: 0.5s;
 }
 .btn:hover, .btn:active {
     color: white;
@@ -164,7 +220,7 @@ body {
     background-color: #2ec06c;
     border-radius: 25px;
     border: 1px solid transparent;
-    transition: 1.5s;
+    transition: 0.5s;
 }
 .about__image {
     position: relative; left: 19px;
@@ -281,29 +337,40 @@ body {
 .project--block {
     position: relative;
     display: inline-block;
-    cursor: pointer;
 }
-.project__overlay{
-    display: none;
-    position: absolute;
-    background:rgba(204,204,204,.5);
-    width: 150px;
-    height: 50px;
-    top: 50%;
-    left: 50%;
-	border: 1px solid white;
-    border-radius: 5px;
-    color:#fff;
-    text-align:center;
-    transition: 1.5s;
-}
-.project__image:hover .project__overlay{
+.project__image {
+    position: relative;
     display: inline-block;
     cursor: pointer;
 }
-.project__image:hover{
-    opacity: 0.15;
-    background-color: #2ec06c;
+.project__overlay {
+    display: none;
+    position: absolute;
+    background-color:rgba(21, 189, 93, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    transition: 0.5s;
+}
+.project__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 50px;
+    padding-top: 13px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color:#fff;
+    transform: translate(-50%,-50%);
+}
+.project__image:hover .project__overlay {
+    display: block;
+    transition: 0.5s;
 }
 .project__type {
     width: 300px;
@@ -315,8 +382,8 @@ body {
     font-size: 20px;
 	font-weight: 400;
     line-height: 30px;
-    position: relative; bottom: 5px;
     padding-top: 15px;
+    position: relative; bottom: 5px;
 }
 .row--project {
     padding-top: 22px;
@@ -389,7 +456,7 @@ body {
     height: 315px;
     position: relative; bottom: 23px; left:80px;
 }
-.social--block {
+.social__block {
     width: 300px;
     display: flex;
     flex-flow: row wrap;
@@ -419,19 +486,6 @@ body {
     padding-top: 41px;
     font-size: 55px;
 }
-.fn, .ln, .eml, .pn, .messagearea {
-    display: inline-block;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
-    font-style: italic;
-    font-family: 'Asap';
-    color: #A4A4A4;
-}
-.fn, .ln, .eml, .pn {
-    width: 300px;
-    height: 50px;
-}
 .fb {
     color: #6E84B3;
 }
@@ -456,38 +510,72 @@ body {
 .dr a {
     color: #3b5998;
 }
-.button--color {
+.social__buttons form {
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
     color: #A4A4A4;
 }
-.messagearea {
-    height: 160px;
+.social__buttons, .ln,.pn {
+    position: relative; right: 15px;
 }
-input:focus, .messagearea:focus {
+.ln,.pn {
+    position: relative; right: 30px;
+}
+.fn, .ln, .ye, .pn {
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #bababa;
+	border-radius: 5px;
+    font-style: italic;
+    font-family: 'Asap';
+    font-weight: 400;
+    color: #A4A4A4;
+    padding-left: 15px;
+    line-height: 30px;
+}
+.fn:focus, .ln:focus, .ye:focus, .pn:focus, .messagearea:focus {
     border-radius: 5px;
     border-width: 1px;
     border-color: #2EC06C;
     outline: none;
+    cursor: pointer;
+    transition: 0.3s;
 }
-textarea {
+.message__area {
+    height: 161px;
+    width: 620px;
+    position: relative;
+    display: inline-block;
+    font-style: italic;
+    font-family: 'Asap';
+    font-weight: 400;
+    color: #A4A4A4;
+}
+.message__text {
+    box-sizing: border-box;
     resize: none;
     border: none;
-    font-style: italic;
-    text-align: none;
-    width: 565px;
-    height: 155px;
-}
-button {
+    width: 575px;
     height: 160px;
+    font-style: italic;
+    padding: 15px 15px;
+    border: 1px solid #bababa;
+    border-radius: 5px 0px 0px 5px;
+}
+.message__button {
+    height: 160px;
+    width: 40px;
     vertical-align: top;
-    margin-right: -100px;
-}
-button:hover {
     background-color: #2EC06C;
-}
-.social--buttons {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    position: relative; right: 3px;
 }
 .last__footer {
     height: 50px;
