@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,700|Karla:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./plugins/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./plugins/slick/slick-theme.css" />
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -174,16 +176,31 @@
             <div>
                 <p class="clients_header">Some awesome companies we've had the pleasure to work with</p>
                 <div class="clients__list">
-                    <a href="javascript:void(0)"><img src="./img/client_01.png" alt=""></a>
-                    <a href="javascript:void(0)"><img src="./img/client_02.png" alt=""></a>
-                    <a href="javascript:void(0)"><img src="./img/client_03.png" alt=""></a>
-                    <a href="javascript:void(0)"><img src="./img/client_04.png" alt=""></a>
-                    <a href="javascript:void(0)"><img src="./img/client_05.png" alt=""></a>
+                    <div class="slider__multiple">
+                        <div class="slide">
+                            <a href="javascript:void(0)"><img data-lazy="./img/client_01.png" alt=""></a>
+                        </div>
+                        <div class="slide">
+                            <a href="javascript:void(0)"><img data-lazy="./img/client_02.png" alt=""></a>
+                        </div>
+                        <div class="slide">
+                            <a href="javascript:void(0)"><img data-lazy="./img/client_03.png" alt=""></a>
+                        </div>
+                        <div class="slide">
+                            <a href="javascript:void(0)"><img data-lazy="./img/client_04.png" alt=""></a>
+                        </div>
+                        <div class="slide">
+                            <a href="javascript:void(0)"><img data-lazy="./img/client_05.png" alt=""></a>
+                        </div>
+                        <div class="slide">
+                            <a href="javascript:void(0)"><img data-lazy="./img/client_03.png" alt=""></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>    
     </div>
-    <div class="project__section">
+    <div class="project">
         <div class="container"><a name="top3"></a>
             <p class="project__title">Check out some of my<br> <span class="project__title--bold">latest</span> and <span class="project__title--bold">greatest</span> projects</p>
             <p class="project__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
@@ -253,8 +270,24 @@
     <div class="feedback__section">
         <div class="container">
             <div class="feedback__block">
-                <p class="feedback__text">“Loved the graphics very much and so happy I found this very talented designer. He pays attention to detail and prompt. Work we delivered before deadline. ”</p>
-                <p class="feedback__name"><span class="feedback--bold">Shauna Graham</span>, <span class="feedback--italic">Alo Group</span></p>
+                <div class="slider">
+                    <div class="slide">
+                        <p class="feedback__text">“Loved the graphics very much and so happy I found this very talented designer. He pays attention to detail and prompt. Work we delivered before deadline. ”</p>
+                        <p class="feedback__name"><span class="feedback--bold">Shauna Graham</span>, <span class="feedback--italic">Alo Group</span></p>
+                    </div>
+                    <div class="slide">
+                        <p class="feedback__text">“Loved the graphics very much and so happy I found this very talented designer. He pays attention to detail and prompt. Work we delivered before deadline. ”</p>
+                        <p class="feedback__name"><span class="feedback--bold">Shauna Graham</span>, <span class="feedback--italic">Alo Group</span></p>
+                    </div>
+                    <div class="slide">
+                        <p class="feedback__text">“Loved the graphics very much and so happy I found this very talented designer. He pays attention to detail and prompt. Work we delivered before deadline. ”</p>
+                        <p class="feedback__name"><span class="feedback--bold">Shauna Graham</span>, <span class="feedback--italic">Alo Group</span></p>
+                    </div>
+                    <div class="slide">
+                        <p class="feedback__text">“Loved the graphics very much and so happy I found this very talented designer. He pays attention to detail and prompt. Work we delivered before deadline. ”</p>
+                        <p class="feedback__name"><span class="feedback--bold">Shauna Graham</span>, <span class="feedback--italic">Alo Group</span></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -293,6 +326,26 @@
     <div class="last__footer">
         <div class="footer__text">&#169; 2014 <span class="footer--italic">SEFolio</span>/ Design by <span class="footer--italic">Eftakher Alam</span></div>
     </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="./plugins/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.slider__multiple').slick({
+            dots: false,
+            arrows: true,
+            slidesToShow: 5,
+            slidesToScroll: 1
+        });
+    });
+    $(document).ready(function () {
+        $('.slider').slick({
+            dots: true,
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    });
+</script>
 <script>
     function openNav() {
         document.getElementById("mySidebar").style.width = "260px";

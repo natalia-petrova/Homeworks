@@ -210,6 +210,7 @@ body {
     line-height: 29px;
     cursor: pointer;
     transition: 0.5s;
+    outline: none;
 }
 .btn:hover, .btn:active {
     color: white;
@@ -299,7 +300,7 @@ body {
     align-content: center;
     padding: 60px 100px;
 }
-.project__section {
+.project {
     height: 1066px;
 }
 .project__title {
@@ -344,7 +345,6 @@ body {
     cursor: pointer;
 }
 .project__overlay {
-    display: none;
     position: absolute;
     background-color:rgba(21, 189, 93, 0.8);
     width: 100%;
@@ -354,6 +354,7 @@ body {
     right: 0;
     bottom: 0;
     text-align: center;
+    opacity: 0;
     transition: 0.5s;
 }
 .project__text {
@@ -370,6 +371,7 @@ body {
 }
 .project__image:hover .project__overlay {
     display: block;
+    opacity: 1;
     transition: 0.5s;
 }
 .project__type {
@@ -377,7 +379,7 @@ body {
 	height: 70px;
     background-color: #eee;
     border-radius: 0px 0px 10px 10px;
-    color: #666;
+    color: black;
 	font-family: 'Karla';
     font-size: 20px;
 	font-weight: 400;
@@ -472,43 +474,42 @@ body {
     border-radius: 5px;
 }
 .fb:hover, .tw:hover, .ig:hover, .dr:hover {
-    background-color: #FF0084;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: 1.5s;
 }
-.fb:hover a, .tw:hover a, .ig:hover a, .dr:hover a {
-    color: white;
-}
 .fab {
     padding-top: 41px;
     font-size: 55px;
 }
-.fb {
-    color: #6E84B3;
-}
-.fb a {
+.fb, .fb a {
     color: #3b5998;
 }
-.tw {
+.tw, .tw a {
     color: #41C1F2;
 }
-.tw a {
-    color: #41C1F2;
-}
-.ig {
+.ig, .ig a {
     color: #769AB7;
 }
-.ig a {
-    color: #769AB7;
+.dr, .dr a {
+    color: #FF0084;
 }
-.dr {
-    color: #6E84B3;
+.fb:hover a, .tw:hover a, .ig:hover a, .dr:hover a {
+    color: white;
 }
-.dr a {
-    color: #3b5998;
+.fb:hover {
+    background-color: #3b5998;
+}
+.tw:hover {
+    background-color: #41C1F2;
+}
+.ig:hover {
+    background-color: #769AB7;
+}
+.dr:hover {
+    background-color: #FF0084;
 }
 .social__buttons form {
     height: 300px;
@@ -540,8 +541,7 @@ body {
 .fn:focus, .ln:focus, .ye:focus, .pn:focus, .messagearea:focus {
     border-radius: 5px;
     border-width: 1px;
-    border-color: #2EC06C;
-    outline: none;
+    outline-color: #2EC06C;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -565,6 +565,7 @@ body {
     padding: 15px 15px;
     border: 1px solid #bababa;
     border-radius: 5px 0px 0px 5px;
+    outline-color: #2EC06C;
 }
 .message__button {
     height: 160px;
@@ -591,4 +592,33 @@ body {
     color: #2ec06c;
 	font-weight: 700;
 	font-style: italic;
+}
+.slider, .slider__multiple {
+    max-width: 100%;
+    width: 100%;
+}
+.slide {
+    outline: none;
+}
+.slick-dots li {
+    margin: 0px 3px;
+    width: auto;
+    height: auto;
+}
+.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    background-color: #bababa;
+    padding: 0;
+    border-radius: 50%;
+}
+.slick-dots li.slick-active button {
+    outline: none;
+    background-color: #2ec06c;
+}
+.slick-dots li button:before {
+    display: none;
+}
+.slider__multiple .slick-dots li{
+    position: relative; top: 30px;
 }
