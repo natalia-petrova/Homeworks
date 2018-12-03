@@ -1,6 +1,7 @@
 body {
-    background-image: url(./Portfolio.png);
+    background-image: url(../img/Portfolio.png);
     background-position: top;
+    background-repeat: no-repeat;
     background-color: #F7F7F7;
     font-family:'Rufina';
     color: #4e4d4d;
@@ -10,17 +11,15 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-.header {
+.header__group {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
     word-spacing: -3.5px;
+    overflow: hidden;
 }
-.menu__shadow {
-    height: 9px;
-}
-.nav__list1 {
+.header__list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -43,8 +42,8 @@ body {
 .nav__link:after {
     position: absolute;
     bottom: 11px;
-    left: 17px;
-    width: calc(100% - 17px * 2);
+    left: 15px;
+    width: calc(100% - 15px * 2);
     height: 2px;
     background-color:black;
     display: block;
@@ -61,26 +60,27 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-.main__part {
+.portfolio {
+    height: 1200px;
+}
+.portfolio__nav {
+    margin:  26px 3px 17px 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 20px;
 }
-.nav__list2 {
+.portfolio__list {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
-.nav__group {
-    margin:  26px 3px 17px 3px;
-}
-.nav__item2 {
+.portfolio__item {
     padding: 0px 10px 0px 12px;
     word-spacing: 3px;
 }
-.nav__link2 {
+.portfolio__link {
     font-family:'Rufina';
     font-size: 16px;
     font-weight: 400;
@@ -91,60 +91,41 @@ body {
     position: relative;
     padding: 4px 6px 4px 6px;
     width: 650px;
+    transition: 0.5s;
 }
-.nav__link2--active, .nav__link2:hover {
+.portfolio__link--active, .portfolio__link:hover {
     background: #6a6665; 
     color: white;
     padding: 4px 6px 4px 6px;
 }
-.img__group {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+.portfolio__img {
     padding-top: 30px;
-    padding-bottom: 55px;
-    height: 1070px;
+    margin: 0;
 }
-.progress-bar {
-    width: 264px;
-    display: block;
-    height: 20px;
-    background-color: #908C8A;
-    position: relative; top: 18px;
+.portfolio__img img:hover {
+    filter: sepia(100%);
+    transition: 0.5s;
 }
-.progress-bar > span {
-    background-color: #474241;
-    height: 20px;
-    display: block;
-}
-.progress-bar:hover {
-    display: block;
-    background-color: #DFDEDE;
-    position: relative; top: 18px;
-}
-.progress-bar > span:hover {
-    background-color: #F79440;
-    height: 20px;
-    display: block;
+.row--img {
+    padding-top: 30px;
 }
 .main__footer {
-    display: flex;
-    flex-flow: row wrap;
-    padding-top: 8px;
     background-color: #605A58;
+    height: 310px;
 }
-.footer__logo {
+.main__footer__group {
+    padding: 20px 15px;
+}
+.footer__info {
     display: flex;
     flex-flow: row wrap;
-    width: 58%;
-    margin-left: 34px;
-    padding-right: 72px;
-    text-align: justify;
 }
 .social {
     display: flex;
     flex-direction: row;
-    position: relative; right: 7px; bottom: 5px;
+    justify-content: center;
+    position: relative; left: 1px; bottom: 5px;
+    padding-top: 16px;
 }
 .media {
     height: 36px;
@@ -156,21 +137,26 @@ body {
     background: #474241;
     margin: 7px 7px;
     border: 1px solid #444;
+    cursor: pointer;
+}
+.media a {
+    color: #605A58;
 }
 .media:hover  {
     background: #f79440;
+    transition: 0.5s;
 }
-.gkr {
+.author__info {
     margin-left: 20px;
 }
 .geo {
     opacity: 0.66;
 	color: white;
     font-family: 'Open Sans';
-    margin-left: 5px;
+    padding-top: 15px;
 }
-.skills__scale {
-    margin-left: 41px;
+.geo .fas {
+    margin-right: 10px;
 }
 h1 {
     margin: 0px;
@@ -188,33 +174,56 @@ h2 {
     font-size: 18px;
     font-weight: 400;
 }
-.skills__scale > h1 {
-    position: relative; right: 31px;
-}
-.text__bio {
+.text__info {
     opacity: 0.66;
 	color: white;
 	font-family: 'Open Sans';
 	font-size: 16px;
 	font-weight: 400;
-    margin: 0px;
-    padding: 0px 3px;
+    padding: 0px 5px;
     word-spacing: 2px;
-    position: relative; bottom: 5px;
-    line-height: 20px;
+}
+.progress-bar {
+    display: block;
+    width: 264px;
+    height: 14px;
+    background-color: #908C8A;
+    margin-top: 21px;
+}
+.progress-bar > span {
+    background-color: #474241;
+    height: 14px;
+    display: block;
+}
+.progress-bar:hover {
+    display: block;
+    background-color: #DFDEDE;
+}
+.progress-bar:hover span {
+    background-color: #F79440;
+    height: 14px;
+    display: block;
+}
+.footer__skills {
+    padding-top: 13px;
+    padding-left: 45px;
 }
 .last__footer {
+    background-color: #474241;
+    height: 46px;
+}
+.last__footer__group {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #474241;
 }
-.last__footer p {
+.last__footer__group p {
     padding-right: 32px;
-    padding-top: 10px;
+    padding-top: 5px;
     font-size: 12px;
+    color: #a19795;
 }
-.nav__list3 {
+.last__footer__list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -223,54 +232,37 @@ h2 {
 	font-size: 12px;
 	font-weight: 400;
 }
-.nav__item3 {
-    margin:  25px 2px 16px 2px;
+.last__footer__item {
+    margin: 15px 2px 16px 2px;
 }
-.nav__link3 {
+.last__footer__link {
     font-family:'Rufina';
     font-size: 12px;
     font-weight: 400;
-    line-height: 1;
     color: #a19795;
     text-decoration: none;
     letter-spacing: -0.01em;
-    position: relative; bottom: 3px; left: 7px;
-    padding: 14px;
+    position: relative;
+    padding: 0px 14px;
 }
-.nav__link3:after {
+.last__footer__link:after {
     position: absolute;
-    bottom: 11px;
-    left: 17px;
-    width: calc(100% - 17px * 2);
+    bottom: 1px;
+    left: 14px;
+    width: calc(100% - 14px * 2);
     height: 2px;
     background-color:#a19795;
     display: block;
     content: '';
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(15px);
     transition: .5s;
 }
-.nav__link3--active, .nav__link3:hover {
+.last__footer__link--active, .last__footer__link:hover {
     color: white;
     font-weight: 700;
 }
-.nav__link3--active:after, .nav__link3:hover:after {
+.last__footer__link--active:after, .last__footer__link:hover:after {
     opacity: 1;
     transform: translateY(0);
-}
-.hidden {
-    display: none;
-}
-.icon:hover .bwicon{
-    display:none;
-}
-.icon:hover .hidden{
-    display: block;
-}
-.img__group img:hover {
-    filter: sepia(100%);
-}
-.clear {
-    clear: both;
-    height: 1px;
 }
