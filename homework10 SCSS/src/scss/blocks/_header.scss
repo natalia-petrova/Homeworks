@@ -3,52 +3,57 @@
     width: 100%;
     margin: 0 auto;
 }
-.header__group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-    word-spacing: -3.5px;
-    overflow: hidden;
-}
-.header__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-.nav__item {
-    margin:  25px 2px 16px 2px;
-}
-.nav__link {
-    font-family:'Rufina';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1;
-    color: #a19795;
-    text-decoration: none;
-    letter-spacing: -0.01em;
-    position: relative;
-    padding: 17px;
-    &:after {
-        position: absolute;
-        bottom: 11px;
-        left: 15px;
-        width: calc(100% - 15px * 2);
-        height: 2px;
-        background-color:black;
-        display: block;
-        content: '';
-        opacity: 0;
-        transform: translateY(30px);
-        transition: .5s;
+.header {
+    &__group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        word-spacing: -3.5px;
+        overflow: hidden;
     }
-    &--active, &:hover {
-        color: black;
-        font-weight: 700;
+    &__list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+.nav {
+    &__item {
+        margin: 25px 2px 16px 2px;
+    }
+    &__link {
+        font-family:'Rufina';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+        color: #a19795;
+        text-decoration: none;
+        letter-spacing: -0.01em;
+        position: relative;
+        padding: 17px;
         &:after {
-            opacity: 1;
-            transform: translateY(0);
+            position: absolute;
+            bottom: 11px;
+            left: 15px;
+            width: calc(100% - 15px * 2);
+            height: 2px;
+            background-color:black;
+            display: block;
+            content: '';
+            opacity: 0;
+            transform: translateY(30px);
+            transition: .5s;
+        }
+        &--active, &:hover {
+            color: black;
+            font-weight: 700;
+            &:after {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     }
 }
+

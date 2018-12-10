@@ -19,12 +19,12 @@
   overflow: hidden; }
 
 .header__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
 
 .nav__item {
   margin: 25px 2px 16px 2px; }
@@ -84,7 +84,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 20px; }
+  padding-top: 30px; }
 
 .portfolio__list {
   list-style: none;
@@ -142,7 +142,7 @@
   height: 310px; }
 
 .main__footer__group {
-  padding: 20px 15px; }
+  padding: 30px 15px; }
 
 .footer__info {
   display: -webkit-box;
@@ -204,9 +204,8 @@
   color: white;
   font-family: 'Open Sans';
   padding-top: 15px; }
-
-.geo .fas {
-  margin-right: 10px; }
+  .geo .i {
+    margin-right: 10px; }
 
 h1 {
   margin: 0px;
@@ -232,7 +231,8 @@ h2 {
   font-size: 16px;
   font-weight: 400;
   padding: 0px 5px;
-  word-spacing: 2px; }
+  word-spacing: 2px;
+  line-height: 18px; }
 
 .progress-bar {
   display: block;
@@ -256,7 +256,7 @@ h2 {
   display: block; }
 
 .footer__skills {
-  padding-top: 13px;
+  padding-top: 15px;
   padding-left: 45px; }
 
 .container {

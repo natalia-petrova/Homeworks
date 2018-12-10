@@ -734,12 +734,12 @@ template {
 }
 
 .header__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav__item {
@@ -810,7 +810,7 @@ template {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .portfolio__list {
@@ -878,7 +878,7 @@ template {
 }
 
 .main__footer__group {
-  padding: 20px 15px;
+  padding: 30px 15px;
 }
 
 .footer__info {
@@ -949,7 +949,7 @@ template {
   padding-top: 15px;
 }
 
-.geo .fas {
+.geo .i {
   margin-right: 10px;
 }
 
@@ -980,6 +980,7 @@ h2 {
   font-weight: 400;
   padding: 0px 5px;
   word-spacing: 2px;
+  line-height: 18px;
 }
 
 .progress-bar {
@@ -1008,7 +1009,7 @@ h2 {
 }
 
 .footer__skills {
-  padding-top: 13px;
+  padding-top: 15px;
   padding-left: 45px;
 }
 
@@ -1101,6 +1102,7 @@ h2 {
 }
 
 body {
+  background-image: url(../../img/Portfolio.png);
   background-position: top;
   background-repeat: no-repeat;
   background-color: #F7F7F7;
