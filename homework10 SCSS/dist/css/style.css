@@ -862,7 +862,7 @@ template {
   transition: 0.5s;
 }
 
-.row--img {
+.portfolio__img .row--img {
   padding-top: 30px;
 }
 
@@ -881,7 +881,7 @@ template {
   padding: 30px 15px;
 }
 
-.footer__info {
+.main__footer__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -891,7 +891,18 @@ template {
   flex-flow: row wrap;
 }
 
-.social {
+.author__info {
+  margin-left: 20px;
+}
+
+.author__geo {
+  opacity: 0.66;
+  color: white;
+  font-family: 'Open Sans';
+  padding-top: 15px;
+}
+
+.author__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -906,6 +917,17 @@ template {
   left: 1px;
   bottom: 5px;
   padding-top: 16px;
+}
+
+.author__text {
+  opacity: 0.66;
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0px 5px;
+  word-spacing: 2px;
+  line-height: 18px;
 }
 
 .media {
@@ -938,21 +960,6 @@ template {
   transition: 0.5s;
 }
 
-.author__info {
-  margin-left: 20px;
-}
-
-.geo {
-  opacity: 0.66;
-  color: white;
-  font-family: 'Open Sans';
-  padding-top: 15px;
-}
-
-.geo .i {
-  margin-right: 10px;
-}
-
 h1 {
   margin: 0px;
   padding: 0px;
@@ -970,17 +977,6 @@ h2 {
   right: 33px;
   font-size: 18px;
   font-weight: 400;
-}
-
-.text__info {
-  opacity: 0.66;
-  color: white;
-  font-family: 'Open Sans';
-  font-size: 16px;
-  font-weight: 400;
-  padding: 0px 5px;
-  word-spacing: 2px;
-  line-height: 18px;
 }
 
 .progress-bar {
@@ -1009,7 +1005,6 @@ h2 {
 }
 
 .footer__skills {
-  padding-top: 15px;
   padding-left: 45px;
 }
 
@@ -1102,7 +1097,7 @@ h2 {
 }
 
 body {
-  background-image: url(../../img/Portfolio.png);
+  background-image: url(.././img/Portfolio.png);
   background-position: top;
   background-repeat: no-repeat;
   background-color: #F7F7F7;

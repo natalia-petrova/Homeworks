@@ -6,58 +6,58 @@
 .last__footer {
     background-color: #474241;
     height: 46px;
-}
-.last__footer__group {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.last__footer__group p {
-    padding-right: 32px;
-    padding-top: 5px;
-    font-size: 12px;
-    color: #a19795;
-}
-.last__footer__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-	font-family: 'Rufina';
-	font-size: 12px;
-	font-weight: 400;
-}
-.last__footer__item {
-    margin: 15px 2px 16px 2px;
-}
-.last__footer__link {
-    font-family:'Rufina';
-    font-size: 12px;
-    font-weight: 400;
-    color: #a19795;
-    text-decoration: none;
-    letter-spacing: -0.01em;
-    position: relative;
-    padding: 0px 14px;
-}
-.last__footer__link:after {
-    position: absolute;
-    bottom: 1px;
-    left: 14px;
-    width: calc(100% - 14px * 2);
-    height: 2px;
-    background-color:#a19795;
-    display: block;
-    content: '';
-    opacity: 0;
-    transform: translateY(15px);
-    transition: .5s;
-}
-.last__footer__link--active, .last__footer__link:hover {
-    color: white;
-    font-weight: 700;
-}
-.last__footer__link--active:after, .last__footer__link:hover:after {
-    opacity: 1;
-    transform: translateY(0);
+    &__group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        & p {
+            padding-right: 32px;
+            padding-top: 5px;
+            font-size: 12px;
+            color: #a19795;
+        }
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+	    font-family: 'Rufina';
+	    font-size: 12px;
+	    font-weight: 400;
+    }
+    &__item {
+        margin: 15px 2px 16px 2px;
+    }
+    &__link {
+        font-family:'Rufina';
+        font-size: 12px;
+        font-weight: 400;
+        color: #a19795;
+        text-decoration: none;
+        letter-spacing: -0.01em;
+        position: relative;
+        padding: 0px 14px;
+        &:after {
+            position: absolute;
+            bottom: 1px;
+            left: 14px;
+            width: calc(100% - 14px * 2);
+            height: 2px;
+            background-color:#a19795;
+            display: block;
+            content: '';
+            opacity: 0;
+            transform: translateY(15px);
+            transition: .5s;
+        }
+        &--active, &:hover {
+            color: white;
+            font-weight: 700;
+        }
+        &--active:after, &:hover:after {
+            opacity: 1;
+            transform: translateY(0);
+        } 
+    }
 }

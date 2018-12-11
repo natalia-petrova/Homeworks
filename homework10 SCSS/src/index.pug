@@ -7,14 +7,14 @@ html(lang="en")
 		title homework 10 SCSS
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Rufina:400,700" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-		link(rel="stylesheet", href="./style/style.css")
+		link(rel="stylesheet", href="./css/style.css")
 	body
 		.header
 			.container
 				.header__group
 					.header__logo
 						a(href="javascript:void(0)")
-							img(src="../img/Logo main.png", alt="")
+							img(src="./img/Logo main.png", alt="")
 					nav.header__nav
 						ul.header__list
 							li.nav__item
@@ -25,7 +25,7 @@ html(lang="en")
 								a(href="javascript:void(0)").nav__link RESUME
 							li.nav__item
 								a(href="javascript:void(0)").nav__link CONTACT
-					img(src="../img/shadow menu.png")
+					img(src="./img/shadow menu.png")
 		.portfolio
 			.container
 				.portfolio__group
@@ -47,68 +47,68 @@ html(lang="en")
 						.row
 							.col.col-3
 								a(href="javascript:void(0)")
-									img(src="../img/img01.png", alt="")
+									img(src="./img/img01.png", alt="")
 							.col.col-3
 								a(href="javascript:void(0)")
-									img(src="../img/img02.png", alt="")
+									img(src="./img/img02.png", alt="")
 							.col.col-3
 								a(href="javascript:void(0)")
-									img(src="../img/img03.png", alt="")
+									img(src="./img/img03.png", alt="")
 							.col.col-3
 								a(href="javascript:void(0)")
-									img(src="../img/img04.png", alt="")
+									img(src="./img/img04.png", alt="")
 						.row.row--img
 							.col.col-3
 								a(href="javascript:void(0)")
-									img(src="../img/img05.png", alt="")
+									img(src="./img/img05.png", alt="")
 							.col.col-3
 								a(href="javascript:void(0)")
-									img(src="../img/img06.jpg", alt="")
+									img(src="./img/img06.jpg", alt="")
 							.col.col-3
 								a(href="javascript:void(0)")
-									img(src="../img/img07.png", alt="")
+									img(src="./img/img07.png", alt="")
 							.col.col-3
 								a(href="javascript:void(0)")
-									img(src="../img/img08.png", alt="")
+									img(src="./img/img08.png", alt="")
 						.row.row--img
 							.col.col-3
 								a(href="javascript:void(0)")
-									img(src="../img/img09.png", alt="")
+									img(src="./img/img09.png", alt="")
 							.col.col-3
 								a(href="javascript:void(0)")
-									img(src="../img/img10.png", alt="")
+									img(src="./img/img10.png", alt="")
 							.col.col-3
 								a(href="javascript:void(0)")
-									img(src="../img/img11.png", alt="")
+									img(src="./img/img11.png", alt="")
 							.col.col-3
 								a(href="javascript:void(0)")
-									img(src="../img/img12.png", alt="")
+									img(src="./img/img12.png", alt="")
 						.row.row--img
 							.col.col-3
 								a(href="javascript:void(0)")
-									img(src="../img/img01.png", alt="")
+									img(src="./img/img01.png", alt="")
 							.col.col-3
 								a(href="javascript:void(0)")
-									img(src="../img/img02.png", alt="")
+									img(src="./img/img02.png", alt="")
 							.col.col-3
 								a(href="javascript:void(0)")
-									img(src="../img/img03.png", alt="")
+									img(src="./img/img03.png", alt="")
 							.col.col-3
 								a(href="javascript:void(0)")
-									img(src="../img/img04.png", alt="")
+									img(src="./img/img04.png", alt="")
 		.main__footer
 			.container
 				.main__footer__group
 					.row
 						.col.col-8
-							.footer__info
+							.main__footer__info
 								a(href="javascript:void(0)")
-									img(src="../img/logo footer.png", alt="")
+									img(src="./img/logo footer.png", alt="")
 								.author__info
 									h1 Ganesh Krishnan R
-									div.geo 
-										i.fas.fa-map-marker-alt Kannur, Kerala, India.
-									.social
+									.author__geo 
+										<i class="fas fa-map-marker-alt"></i> Kannur, Kerala, India.
+									.author__social
 										.media
 											a(href="javascript:void(0)")
 												i.fab.fa-facebook-f
@@ -124,11 +124,12 @@ html(lang="en")
 										.media
 											a(href="javascript:void(0)")
 												i.fas.fa-camera-retro
-								.text__info
+								.author__text
 									p I a am front end UI designer and developer with a strong eye for creative, modern and trendy designs. I am an internet bug who try to keep up with the latest trends and technologies. I love photography and have been doing photography professionally and as a hobby for past couple of years. Hence my graphic designing, image editing and manipulation skills have been growing with me during these years...
 						.col.col-4
-							h1 My Skills
-								.footer__skills
+							.footer__skills
+								h1 My Skills
+								.footer__skills--progress
 									.progress-bar
 										span(style={width: "92%"})
 											h2 Ps

@@ -6,20 +6,41 @@
 .main__footer {
     background-color: #605A58;
     height: 310px;
+    &__group {
+        padding: 30px 15px;
+    }
+    &__info {
+        display: flex;
+        flex-flow: row wrap;
+    }
 }
-.main__footer__group {
-    padding: 30px 15px;
-}
-.footer__info {
-    display: flex;
-    flex-flow: row wrap;
-}
-.social {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative; left: 1px; bottom: 5px;
-    padding-top: 16px;
+.author {
+    &__info {
+        margin-left: 20px;
+    }
+    &__geo {
+        opacity: 0.66;
+	    color: white;
+        font-family: 'Open Sans';
+        padding-top: 15px;
+    }
+    &__social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative; left: 1px; bottom: 5px;
+        padding-top: 16px;
+    }
+    &__text {
+        opacity: 0.66;
+	    color: white;
+	    font-family: 'Open Sans';
+	    font-size: 16px;
+	    font-weight: 400;
+        padding: 0px 5px;
+        word-spacing: 2px;
+        line-height: 18px;
+    }
 }
 .media {
     height: 36px;
@@ -32,24 +53,12 @@
     margin: 7px 7px;
     border: 1px solid #444;
     cursor: pointer;
-}
-.media a {
-    color: #605A58;
-}
-.media:hover  {
-    background: #f79440;
-    transition: 0.5s;
-}
-.author__info {
-    margin-left: 20px;
-}
-.geo {
-    opacity: 0.66;
-	color: white;
-    font-family: 'Open Sans';
-    padding-top: 15px;
-    & .i {
-        margin-right: 10px;
+    & a {
+        color: #605A58;
+    }
+    &:hover {
+        background: #f79440;
+        transition: 0.5s;
     }
 }
 h1 {
@@ -68,38 +77,27 @@ h2 {
     font-size: 18px;
     font-weight: 400;
 }
-.text__info {
-    opacity: 0.66;
-	color: white;
-	font-family: 'Open Sans';
-	font-size: 16px;
-	font-weight: 400;
-    padding: 0px 5px;
-    word-spacing: 2px;
-    line-height: 18px;
-}
 .progress-bar {
     display: block;
     width: 264px;
     height: 14px;
     background-color: #908C8A;
     margin-top: 21px;
-}
-.progress-bar > span {
-    background-color: #474241;
-    height: 14px;
-    display: block;
-}
-.progress-bar:hover {
-    display: block;
-    background-color: #DFDEDE;
-}
-.progress-bar:hover span {
-    background-color: #F79440;
-    height: 14px;
-    display: block;
+    & > span {
+        background-color: #474241;
+        height: 14px;
+        display: block;
+    }
+    &:hover {
+        display: block;
+        background-color: #DFDEDE;
+        & span {
+            background-color: #F79440;
+            height: 14px;
+            display: block;
+        }
+    }
 }
 .footer__skills {
-    padding-top: 15px;
-    padding-left: 45px;
+   padding-left: 45px;
 }
