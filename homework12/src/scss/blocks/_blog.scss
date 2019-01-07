@@ -1,0 +1,47 @@
+.container {
+    max-width: 1130px;
+    width: 100%;
+    margin: 0 auto;
+}
+.blog {
+    height: 654px;
+    font-family: 'Proxima Nova';
+    &__group {
+        text-align: left;
+        h1 {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+        }
+        h3 {
+            color: #74818a;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+        h4 {
+            color: white;
+            font-size: 11px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+        p {
+            color: #9c9c9c;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+    }
+    &__header {
+        text-align: center;
+        padding-top: 35px;
+    }
+    &__gallery {
+        padding-top: 68px;
+    }
+}

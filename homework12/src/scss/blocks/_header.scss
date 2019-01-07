@@ -1,0 +1,47 @@
+.container {
+    max-width: 1130px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header {
+    height: 120px;
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    &__group {
+        align-items: center;
+        padding-top: 25px;
+        word-spacing: -3.5px;
+    }
+    &__logo {
+        padding-top: 20px;
+    }
+    &__list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+.nav {
+    &__item {
+        margin: 25px 2px 16px 2px;
+    }
+    &__link {
+        font-family: 'Proxima Nova';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #393939;
+        text-decoration: none;
+        letter-spacing: -0.01em;
+        position: relative;
+        padding: 20px 25px;
+    }
+    .fas {
+        letter-spacing: 20px;
+        font-size: 14px;
+        text-align: right;
+    }
+}

@@ -1,0 +1,23 @@
+.container {
+    max-width: 1130px;
+    width: 100%;
+    margin: 0 auto;
+}
+.mainfooter {
+    height: 361px;
+    padding-top: 55px;
+    background-color: #262626;
+    h2 {
+        font-family: "Proxima Nova";
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+    p {
+        color: #a5a5a5;
+        font-family: "Proxima Nova";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+}

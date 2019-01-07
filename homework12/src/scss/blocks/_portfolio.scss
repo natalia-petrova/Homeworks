@@ -1,0 +1,49 @@
+.container {
+    max-width: 1130px;
+    width: 100%;
+    margin: 0 auto;
+}
+.portfolio {
+    height: 935px;
+    text-align: center;
+    font-family: 'Proxima Nova';
+    &__header {
+        padding-top: 57px;
+        h1 {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 24px;
+            margin: 0;
+        }
+        h3 {
+            color: #74818a;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            margin: 0;
+            padding-top: 10px;
+            letter-spacing: 0.5px;
+        }
+    }
+    &__gallery {
+        padding-top: 76px;
+        h2 {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+        }
+        p {
+            color: #c6c7c9;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 20px;
+        }
+        .second--row {
+            padding-top: 78px;
+        }
+        .project--text {
+            box-sizing: border-box;
+            border: 1px gray;
+        }
+    }
+}
